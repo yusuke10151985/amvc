@@ -475,4 +475,22 @@ except Exception as e:
 
 print("🎉 AI音楽ビデオジェネレーター完成！")
 print("📝 上記のコードを各セルにコピーして実行してください")
-print("🔗 GitHub: https://github.com/yusuke10151985/amvc") 
+print("🔗 GitHub: https://github.com/yusuke10151985/amvc")
+
+## 🔄 次の改良段階
+
+### Phase 1: API統合
+- [ ] GPT-4o API統合（自動プロンプト生成）
+- [ ] Runway Gen-4 API統合（自動映像生成）
+- [ ] より高度なアライメント（Whisper統合）
+
+### Phase 2: 高度な機能
+- [ ] リアルタイム音声プレビュー
+- [ ] 高度な字幕編集（波形表示）
+- [ ] 複数言語対応
+- [ ] クラウドストレージ統合
+
+### Phase 3: 最適化
+- [ ] パフォーマンス改善
+- [ ] バッチ処理対応
+- [ ] 自動品質調整 

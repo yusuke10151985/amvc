@@ -1,0 +1,5 @@
+{
+  "name": "AI Music Video Creator",
+  "description": "A multi-step wizard application to conceptualize, generate assets for, and assemble a music video using AI tools. The process includes defining a music concept, generating SUNO AI prompts, managing audio and lyrics files, timing and editing subtitles, and generating video scenes.",
+  "requestFramePermissions": []
+}
