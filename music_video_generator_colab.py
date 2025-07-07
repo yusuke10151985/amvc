@@ -269,7 +269,7 @@ def add_subtitles_to_video(video_clip, srt_file: str):
         return video_clip
 
 def generate_video(wav_file: str, srt_file: str, output_dir: str = "./outputs"):
-    """最終的な音楽ビデオを生成"""
+    """最終的な音楽ビデオを生成（修正版）"""
     print("🎬 動画生成開始...")
     os.makedirs(output_dir, exist_ok=True)
     
@@ -282,9 +282,10 @@ def generate_video(wav_file: str, srt_file: str, output_dir: str = "./outputs"):
         print(f"❌ 音声読み込みエラー: {e}")
         return None
     
-    # 美しいグラデーション背景を作成
+    # 美しいグラデーション背景を作成（修正版）
     print("🎨 グラデーション背景を作成中...")
-    def make_gradient_frame(get_frame, t):
+    def make_gradient_frame(t):
+        """修正された関数：引数はtのみ"""
         color_value = int(128 + 127 * np.sin(2 * np.pi * t / 4))
         return np.full((1080, 1920, 3), [color_value, 100, 255-color_value], dtype=np.uint8)
     
